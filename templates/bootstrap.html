@@ -1,0 +1,58 @@
+    <!-- Bootstrap Section -->
+    <section id="bootstrap" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Bootstrap Section</h1>
+                        <p class="lead">
+                           Bootstrap es un framework desarrollado y liberado por Twitter que tiene como objetivo facilitar el diseño web. Permite crear de forma sencilla webs de diseño adaptable, es decir, que se ajusten a cualquier dispositivo y tamaño de pantalla y siempre se vean igual de bien. Es Open Source o c&oacute;digo abierto, por lo que lo podemos usar de forma gratuita y sin restricciones.
+                        </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+    <div class="bs-example">
+        <form id="contact">
+          <div class="form-group">
+            <label for="displayName">Nombre</label>
+            <input type="text" class="form-control" id="displayName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="emailAddress">Direcci&oacute;n Email</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Mensaje"></textarea>
+          </div>
+          <button id="send_email" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        </form>
+    </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            {% include 'bootstrap_form.html' %}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Respuesta del Servidor</h4>
+      </div>
+      <div id="server_response" class="modal-body">
+        <pre id="json-renderer"></pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
